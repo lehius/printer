@@ -89,8 +89,27 @@
       return this;
     },
     preview(data) {
-        const md = data && data.md ? data.md : textereaMD.val()
-        const style = data && data.style ? data.style : textereaStyle.val()
+      const printOpts = {
+        Template: data && data.md ? data.md : textereaMD.val(),
+        Style: data && data.style ? data.style : textereaStyle.val(),
+        Emulation: true,
+        Ticket: {
+          Number: 'A001',
+          Services: [
+            {
+              Name: 'Услуга 1'
+            }
+          ],
+          Datetime: new Date()
+        },
+        Pictures: [
+          {
+            Anchor: 
+          }
+        ]
+      }
+      const md = data && data.md ? data.md : textereaMD.val()
+      const style = data && data.style ? data.style : textereaStyle.val()
       send.preview({md, style})
 
     }
