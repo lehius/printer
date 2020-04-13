@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  display: -webkit-flex;
+  #editor {
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    #footer-editor {
+      margin-left: 15px;
+    }
+  }
+}

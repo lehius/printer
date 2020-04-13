@@ -1,0 +1,17 @@
+{
+  "parser": "babel",
+  "rules": {
+    "no-unused-vars": "warn"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint-recomended"
+  ]
+}
