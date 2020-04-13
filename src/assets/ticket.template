@@ -1,0 +1,17 @@
+###### электронная очередь QuickQ www.quickq.ru
+
+![MyLogoData](data:{{ "MyLogoData" | data }})
+
+Номер в очереди:
+
+# {{.Number}}
+
+{{range .Services}}
+#### {{.Name}}
+{{end}}
+
+Талон выдан:
+
+##### {{.Datetime | format}}
+
+###### Ожидайте вызова на табло
